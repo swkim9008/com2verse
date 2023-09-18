@@ -1,0 +1,24 @@
+html, body, video {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    object-fit: fill;
+    background: #323232ff;
+}
+
+#full {
+    background: #323232ff;
+    height: 100%
+}
+
+/* 스크롤바 감추기 (from vuplex (https://support.vuplex.com/articles/how-to-hide-scrollbars))*/
+*::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+/* 스크롤바 감추기 */

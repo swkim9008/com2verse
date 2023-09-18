@@ -1,0 +1,1299 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1469810886141686931
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6269550921188083362}
+  - component: {fileID: 8545602241840743349}
+  - component: {fileID: 1323331543396910551}
+  - component: {fileID: 1793195517547372415}
+  - component: {fileID: 6893476640756684363}
+  - component: {fileID: 6984277715128988793}
+  - component: {fileID: 9214125555818833998}
+  m_Layer: 5
+  m_Name: NoTrack_Listening
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6269550921188083362
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469810886141686931}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7615666646467155721}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &8545602241840743349
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469810886141686931}
+  m_CullTransparentMesh: 1
+--- !u!114 &1323331543396910551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469810886141686931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9372549, g: 0.25490198, b: 0.3647059, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 51635f58ce1411941b2337ecd756aed7, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1793195517547372415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469810886141686931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20ff5c3ae67440f49501fdd83555bd55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isInputAudibleFilter: 3
+  _isOutputAudibleFilter: 2
+  _isSpeakingFilter: 1
+  _isFilterMatch: 0
+  _isInputAudible: 0
+  _isOutputAudible: 0
+  _isSpeaking: 0
+  _onAudioStateMatch:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1469810886141686931}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onAudioStateTrue:
+    m_PersistentCalls:
+      m_Calls: []
+  _onAudioStateFalse:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &6893476640756684363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469810886141686931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e1be1f82125721478720bf8e760402e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _comment: "\uC624\uB514\uC624 \uC785\uB825 \uC0C1\uD0DC \uC804\uB2EC"
+  _targetFindKey: AudioStateChangedListener/IsInputAudible
+  _sourceFindKey: CommunicationUserViewModel/IsRemoteVoiceTrackAvailable
+  _eventFindKey: 
+  _targetPath:
+    propertyOwner: AudioStateChangedListener
+    property: IsInputAudible
+    component: {fileID: 1793195517547372415}
+  _eventPath:
+    propertyOwner: 
+    property: 
+    component: {fileID: 0}
+  _sourcePath:
+    propertyOwner: CommunicationUserViewModel
+    property: IsRemoteVoiceTrackAvailable
+    component: {fileID: 0}
+  _syncOnAwake: 0
+  _bindingMode: 3
+--- !u!114 &6984277715128988793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469810886141686931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e1be1f82125721478720bf8e760402e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _comment: "\uC624\uB514\uC624 \uCD9C\uB825 \uC0C1\uD0DC \uC804\uB2EC"
+  _targetFindKey: AudioStateChangedListener/IsOutputAudible
+  _sourceFindKey: VoiceViewModel/IsAudible
+  _eventFindKey: 
+  _targetPath:
+    propertyOwner: AudioStateChangedListener
+    property: IsOutputAudible
+    component: {fileID: 1793195517547372415}
+  _eventPath:
+    propertyOwner: 
+    property: 
+    component: {fileID: 0}
+  _sourcePath:
+    propertyOwner: VoiceViewModel
+    property: IsAudible
+    component: {fileID: 0}
+  _syncOnAwake: 0
+  _bindingMode: 3
+--- !u!114 &9214125555818833998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469810886141686931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e1be1f82125721478720bf8e760402e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _comment: "\uC74C\uC131 \uAC10\uC9C0 \uC0C1\uD0DC \uC804\uB2EC"
+  _targetFindKey: AudioStateChangedListener/IsSpeaking
+  _sourceFindKey: VoiceViewModel/IsSpeaking
+  _eventFindKey: 
+  _targetPath:
+    propertyOwner: AudioStateChangedListener
+    property: IsSpeaking
+    component: {fileID: 1793195517547372415}
+  _eventPath:
+    propertyOwner: 
+    property: 
+    component: {fileID: 0}
+  _sourcePath:
+    propertyOwner: VoiceViewModel
+    property: IsSpeaking
+    component: {fileID: 0}
+  _syncOnAwake: 0
+  _bindingMode: 3
+--- !u!1 &4569930048571738099
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1220740504585517299}
+  - component: {fileID: 2494295597318692017}
+  - component: {fileID: 6774229517639693798}
+  - component: {fileID: 4429868714886779973}
+  - component: {fileID: 6050972525899838016}
+  - component: {fileID: 2910308616857037022}
+  - component: {fileID: 5580934576134036318}
+  m_Layer: 5
+  m_Name: NoTrack_NotListening
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1220740504585517299
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4569930048571738099}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7615666646467155721}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2494295597318692017
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4569930048571738099}
+  m_CullTransparentMesh: 1
+--- !u!114 &6774229517639693798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4569930048571738099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9372549, g: 0.25490198, b: 0.3647059, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 51635f58ce1411941b2337ecd756aed7, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4429868714886779973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4569930048571738099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20ff5c3ae67440f49501fdd83555bd55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isInputAudibleFilter: 3
+  _isOutputAudibleFilter: 3
+  _isSpeakingFilter: 1
+  _isFilterMatch: 0
+  _isInputAudible: 0
+  _isOutputAudible: 0
+  _isSpeaking: 0
+  _onAudioStateMatch:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4569930048571738099}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onAudioStateTrue:
+    m_PersistentCalls:
+      m_Calls: []
+  _onAudioStateFalse:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &6050972525899838016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4569930048571738099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e1be1f82125721478720bf8e760402e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _comment: "\uC624\uB514\uC624 \uC785\uB825 \uC0C1\uD0DC \uC804\uB2EC"
+  _targetFindKey: AudioStateChangedListener/IsInputAudible
+  _sourceFindKey: CommunicationUserViewModel/IsRemoteVoiceTrackAvailable
+  _eventFindKey: 
+  _targetPath:
+    propertyOwner: AudioStateChangedListener
+    property: IsInputAudible
+    component: {fileID: 4429868714886779973}
+  _eventPath:
+    propertyOwner: 
+    property: 
+    component: {fileID: 0}
+  _sourcePath:
+    propertyOwner: CommunicationUserViewModel
+    property: IsRemoteVoiceTrackAvailable
+    component: {fileID: 0}
+  _syncOnAwake: 0
+  _bindingMode: 3
+--- !u!114 &2910308616857037022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4569930048571738099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e1be1f82125721478720bf8e760402e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _comment: "\uC624\uB514\uC624 \uCD9C\uB825 \uC0C1\uD0DC \uC804\uB2EC"
+  _targetFindKey: AudioStateChangedListener/IsOutputAudible
+  _sourceFindKey: VoiceViewModel/IsAudible
+  _eventFindKey: 
+  _targetPath:
+    propertyOwner: AudioStateChangedListener
+    property: IsOutputAudible
+    component: {fileID: 4429868714886779973}
+  _eventPath:
+    propertyOwner: 
+    property: 
+    component: {fileID: 0}
+  _sourcePath:
+    propertyOwner: VoiceViewModel
+    property: IsAudible
+    component: {fileID: 0}
+  _syncOnAwake: 0
+  _bindingMode: 3
+--- !u!114 &5580934576134036318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4569930048571738099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e1be1f82125721478720bf8e760402e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _comment: "\uC74C\uC131 \uAC10\uC9C0 \uC0C1\uD0DC \uC804\uB2EC"
+  _targetFindKey: AudioStateChangedListener/IsSpeaking
+  _sourceFindKey: VoiceViewModel/IsSpeaking
+  _eventFindKey: 
+  _targetPath:
+    propertyOwner: AudioStateChangedListener
+    property: IsSpeaking
+    component: {fileID: 4429868714886779973}
+  _eventPath:
+    propertyOwner: 
+    property: 
+    component: {fileID: 0}
+  _sourcePath:
+    propertyOwner: VoiceViewModel
+    property: IsSpeaking
+    component: {fileID: 0}
+  _syncOnAwake: 0
+  _bindingMode: 3
+--- !u!1 &5294098923547422226
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3840980774808741166}
+  - component: {fileID: 3412723367408392314}
+  - component: {fileID: 5713533357058707756}
+  - component: {fileID: 7586185128361307227}
+  - component: {fileID: 7029449225170752080}
+  - component: {fileID: 6905275301239412022}
+  - component: {fileID: 6466082610000377402}
+  m_Layer: 5
+  m_Name: NotRunning_Connection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &3840980774808741166
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5294098923547422226}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3360163958632667118}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &3412723367408392314
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5294098923547422226}
+  m_CullTransparentMesh: 1
+--- !u!114 &5713533357058707756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5294098923547422226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9372549, g: 0.25490198, b: 0.3647059, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 51635f58ce1411941b2337ecd756aed7, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7586185128361307227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5294098923547422226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20ff5c3ae67440f49501fdd83555bd55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isInputAudibleFilter: 3
+  _isOutputAudibleFilter: 2
+  _isSpeakingFilter: 1
+  _isFilterMatch: 0
+  _isInputAudible: 0
+  _isOutputAudible: 0
+  _isSpeaking: 0
+  _onAudioStateMatch:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5294098923547422226}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onAudioStateTrue:
+    m_PersistentCalls:
+      m_Calls: []
+  _onAudioStateFalse:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &7029449225170752080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5294098923547422226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e1be1f82125721478720bf8e760402e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _comment: "\uC624\uB514\uC624 \uC785\uB825 \uC0C1\uD0DC \uC804\uB2EC"
+  _targetFindKey: AudioStateChangedListener/IsInputAudible
+  _sourceFindKey: VoiceViewModel/IsRunning
+  _eventFindKey: 
+  _targetPath:
+    propertyOwner: AudioStateChangedListener
+    property: IsInputAudible
+    component: {fileID: 7586185128361307227}
+  _eventPath:
+    propertyOwner: 
+    property: 
+    component: {fileID: 0}
+  _sourcePath:
+    propertyOwner: VoiceViewModel
+    property: IsRunning
+    component: {fileID: 0}
+  _syncOnAwake: 0
+  _bindingMode: 3
+--- !u!114 &6905275301239412022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5294098923547422226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e1be1f82125721478720bf8e760402e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _comment: "\uC624\uB514\uC624 \uCD9C\uB825 \uC0C1\uD0DC \uC804\uB2EC"
+  _targetFindKey: AudioStateChangedListener/IsOutputAudible
+  _sourceFindKey: CommunicationUserViewModel/IsLocalVoiceConnectionTarget
+  _eventFindKey: 
+  _targetPath:
+    propertyOwner: AudioStateChangedListener
+    property: IsOutputAudible
+    component: {fileID: 7586185128361307227}
+  _eventPath:
+    propertyOwner: 
+    property: 
+    component: {fileID: 0}
+  _sourcePath:
+    propertyOwner: CommunicationUserViewModel
+    property: IsLocalVoiceConnectionTarget
+    component: {fileID: 0}
+  _syncOnAwake: 0
+  _bindingMode: 3
+--- !u!114 &6466082610000377402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5294098923547422226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e1be1f82125721478720bf8e760402e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _comment: "\uC74C\uC131 \uAC10\uC9C0 \uC0C1\uD0DC \uC804\uB2EC"
+  _targetFindKey: AudioStateChangedListener/IsSpeaking
+  _sourceFindKey: VoiceViewModel/IsSpeaking
+  _eventFindKey: 
+  _targetPath:
+    propertyOwner: AudioStateChangedListener
+    property: IsSpeaking
+    component: {fileID: 7586185128361307227}
+  _eventPath:
+    propertyOwner: 
+    property: 
+    component: {fileID: 0}
+  _sourcePath:
+    propertyOwner: VoiceViewModel
+    property: IsSpeaking
+    component: {fileID: 0}
+  _syncOnAwake: 0
+  _bindingMode: 3
+--- !u!1 &5359344268171840799
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3360163958632667118}
+  - component: {fileID: 2639563660496703611}
+  - component: {fileID: 43494461095264014}
+  m_Layer: 5
+  m_Name: Local
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3360163958632667118
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5359344268171840799}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4238047819736455485}
+  - {fileID: 3840980774808741166}
+  - {fileID: 7902513302591904828}
+  m_Father: {fileID: 5172061167335994917}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 20, y: 20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2639563660496703611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5359344268171840799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb41cd819a0d30f409fc5ff538a324c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &43494461095264014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5359344268171840799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e1be1f82125721478720bf8e760402e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _comment: 
+  _targetFindKey: GameObjectPropertyExtensions/ActiveState
+  _sourceFindKey: CommunicationUserViewModel/IsLocalUser
+  _eventFindKey: 
+  _targetPath:
+    propertyOwner: GameObjectPropertyExtensions
+    property: ActiveState
+    component: {fileID: 2639563660496703611}
+  _eventPath:
+    propertyOwner: 
+    property: 
+    component: {fileID: 0}
+  _sourcePath:
+    propertyOwner: CommunicationUserViewModel
+    property: IsLocalUser
+    component: {fileID: 0}
+  _syncOnAwake: 0
+  _bindingMode: 3
+--- !u!1 &6311895599035569685
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7902513302591904828}
+  - component: {fileID: 465789151636471753}
+  - component: {fileID: 7357611964234128053}
+  - component: {fileID: 8789893989673797037}
+  - component: {fileID: 6087283044818081866}
+  - component: {fileID: 7044483897328132511}
+  - component: {fileID: 3089263824642168098}
+  m_Layer: 5
+  m_Name: Running_NoConnection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &7902513302591904828
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6311895599035569685}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3360163958632667118}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &465789151636471753
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6311895599035569685}
+  m_CullTransparentMesh: 1
+--- !u!114 &7357611964234128053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6311895599035569685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9372549, g: 0.25490198, b: 0.3647059, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 51635f58ce1411941b2337ecd756aed7, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8789893989673797037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6311895599035569685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20ff5c3ae67440f49501fdd83555bd55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isInputAudibleFilter: 2
+  _isOutputAudibleFilter: 3
+  _isSpeakingFilter: 1
+  _isFilterMatch: 0
+  _isInputAudible: 0
+  _isOutputAudible: 0
+  _isSpeaking: 0
+  _onAudioStateMatch:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6311895599035569685}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onAudioStateTrue:
+    m_PersistentCalls:
+      m_Calls: []
+  _onAudioStateFalse:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &6087283044818081866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6311895599035569685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e1be1f82125721478720bf8e760402e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _comment: "\uC624\uB514\uC624 \uC785\uB825 \uC0C1\uD0DC \uC804\uB2EC"
+  _targetFindKey: AudioStateChangedListener/IsInputAudible
+  _sourceFindKey: VoiceViewModel/IsRunning
+  _eventFindKey: 
+  _targetPath:
+    propertyOwner: AudioStateChangedListener
+    property: IsInputAudible
+    component: {fileID: 8789893989673797037}
+  _eventPath:
+    propertyOwner: 
+    property: 
+    component: {fileID: 0}
+  _sourcePath:
+    propertyOwner: VoiceViewModel
+    property: IsRunning
+    component: {fileID: 0}
+  _syncOnAwake: 0
+  _bindingMode: 3
+--- !u!114 &7044483897328132511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6311895599035569685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e1be1f82125721478720bf8e760402e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _comment: "\uC624\uB514\uC624 \uCD9C\uB825 \uC0C1\uD0DC \uC804\uB2EC"
+  _targetFindKey: AudioStateChangedListener/IsOutputAudible
+  _sourceFindKey: CommunicationUserViewModel/IsLocalVoiceConnectionTarget
+  _eventFindKey: 
+  _targetPath:
+    propertyOwner: AudioStateChangedListener
+    property: IsOutputAudible
+    component: {fileID: 8789893989673797037}
+  _eventPath:
+    propertyOwner: 
+    property: 
+    component: {fileID: 0}
+  _sourcePath:
+    propertyOwner: CommunicationUserViewModel
+    property: IsLocalVoiceConnectionTarget
+    component: {fileID: 0}
+  _syncOnAwake: 0
+  _bindingMode: 3
+--- !u!114 &3089263824642168098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6311895599035569685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e1be1f82125721478720bf8e760402e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _comment: "\uC74C\uC131 \uAC10\uC9C0 \uC0C1\uD0DC \uC804\uB2EC"
+  _targetFindKey: AudioStateChangedListener/IsSpeaking
+  _sourceFindKey: VoiceViewModel/IsSpeaking
+  _eventFindKey: 
+  _targetPath:
+    propertyOwner: AudioStateChangedListener
+    property: IsSpeaking
+    component: {fileID: 8789893989673797037}
+  _eventPath:
+    propertyOwner: 
+    property: 
+    component: {fileID: 0}
+  _sourcePath:
+    propertyOwner: VoiceViewModel
+    property: IsSpeaking
+    component: {fileID: 0}
+  _syncOnAwake: 0
+  _bindingMode: 3
+--- !u!1 &6758255793022985971
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4238047819736455485}
+  - component: {fileID: 1299264551698829787}
+  - component: {fileID: 5573069262453726142}
+  - component: {fileID: 442948518107792429}
+  - component: {fileID: 5221235760263020150}
+  - component: {fileID: 4193495150474311415}
+  - component: {fileID: 4996385995588089962}
+  m_Layer: 5
+  m_Name: NotRunning_NoConnection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &4238047819736455485
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6758255793022985971}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3360163958632667118}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1299264551698829787
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6758255793022985971}
+  m_CullTransparentMesh: 1
+--- !u!114 &5573069262453726142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6758255793022985971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9372549, g: 0.25490198, b: 0.3647059, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 51635f58ce1411941b2337ecd756aed7, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &442948518107792429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6758255793022985971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20ff5c3ae67440f49501fdd83555bd55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isInputAudibleFilter: 3
+  _isOutputAudibleFilter: 3
+  _isSpeakingFilter: 1
+  _isFilterMatch: 0
+  _isInputAudible: 0
+  _isOutputAudible: 0
+  _isSpeaking: 0
+  _onAudioStateMatch:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6758255793022985971}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onAudioStateTrue:
+    m_PersistentCalls:
+      m_Calls: []
+  _onAudioStateFalse:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &5221235760263020150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6758255793022985971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e1be1f82125721478720bf8e760402e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _comment: "\uC624\uB514\uC624 \uC785\uB825 \uC0C1\uD0DC \uC804\uB2EC"
+  _targetFindKey: AudioStateChangedListener/IsInputAudible
+  _sourceFindKey: VoiceViewModel/IsRunning
+  _eventFindKey: 
+  _targetPath:
+    propertyOwner: AudioStateChangedListener
+    property: IsInputAudible
+    component: {fileID: 442948518107792429}
+  _eventPath:
+    propertyOwner: 
+    property: 
+    component: {fileID: 0}
+  _sourcePath:
+    propertyOwner: VoiceViewModel
+    property: IsRunning
+    component: {fileID: 0}
+  _syncOnAwake: 0
+  _bindingMode: 3
+--- !u!114 &4193495150474311415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6758255793022985971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e1be1f82125721478720bf8e760402e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _comment: "\uC624\uB514\uC624 \uCD9C\uB825 \uC0C1\uD0DC \uC804\uB2EC"
+  _targetFindKey: AudioStateChangedListener/IsOutputAudible
+  _sourceFindKey: CommunicationUserViewModel/IsLocalVoiceConnectionTarget
+  _eventFindKey: 
+  _targetPath:
+    propertyOwner: AudioStateChangedListener
+    property: IsOutputAudible
+    component: {fileID: 442948518107792429}
+  _eventPath:
+    propertyOwner: 
+    property: 
+    component: {fileID: 0}
+  _sourcePath:
+    propertyOwner: CommunicationUserViewModel
+    property: IsLocalVoiceConnectionTarget
+    component: {fileID: 0}
+  _syncOnAwake: 0
+  _bindingMode: 3
+--- !u!114 &4996385995588089962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6758255793022985971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e1be1f82125721478720bf8e760402e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _comment: "\uC74C\uC131 \uAC10\uC9C0 \uC0C1\uD0DC \uC804\uB2EC"
+  _targetFindKey: AudioStateChangedListener/IsSpeaking
+  _sourceFindKey: VoiceViewModel/IsSpeaking
+  _eventFindKey: 
+  _targetPath:
+    propertyOwner: AudioStateChangedListener
+    property: IsSpeaking
+    component: {fileID: 442948518107792429}
+  _eventPath:
+    propertyOwner: 
+    property: 
+    component: {fileID: 0}
+  _sourcePath:
+    propertyOwner: VoiceViewModel
+    property: IsSpeaking
+    component: {fileID: 0}
+  _syncOnAwake: 0
+  _bindingMode: 3
+--- !u!1 &7373266551752510526
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7615666646467155721}
+  - component: {fileID: 8278021007574607182}
+  - component: {fileID: 2180228102529963737}
+  m_Layer: 5
+  m_Name: Remote
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &7615666646467155721
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7373266551752510526}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1220740504585517299}
+  - {fileID: 6269550921188083362}
+  m_Father: {fileID: 5172061167335994917}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 20, y: 20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &8278021007574607182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7373266551752510526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb41cd819a0d30f409fc5ff538a324c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2180228102529963737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7373266551752510526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e1be1f82125721478720bf8e760402e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _comment: 
+  _targetFindKey: GameObjectPropertyExtensions/ActiveState
+  _sourceFindKey: CommunicationUserViewModel/IsRemoteUser
+  _eventFindKey: 
+  _targetPath:
+    propertyOwner: GameObjectPropertyExtensions
+    property: ActiveState
+    component: {fileID: 8278021007574607182}
+  _eventPath:
+    propertyOwner: 
+    property: 
+    component: {fileID: 0}
+  _sourcePath:
+    propertyOwner: CommunicationUserViewModel
+    property: IsRemoteUser
+    component: {fileID: 0}
+  _syncOnAwake: 0
+  _bindingMode: 3
+--- !u!1 &8600178606026468512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5172061167335994917}
+  - component: {fileID: 1373416990253490161}
+  - component: {fileID: 2264892638945452123}
+  m_Layer: 5
+  m_Name: UI_Avatar_Hud_Microphone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5172061167335994917
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8600178606026468512}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3360163958632667118}
+  - {fileID: 7615666646467155721}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1373416990253490161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8600178606026468512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb41cd819a0d30f409fc5ff538a324c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2264892638945452123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8600178606026468512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e1be1f82125721478720bf8e760402e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _comment: "\uB9C8\uC774\uD06C \uC544\uC774\uCF58 UI \uC0AC\uC6A9 \uC2DC \uD65C\uC131\uD654"
+  _targetFindKey: GameObjectPropertyExtensions/ActiveState
+  _sourceFindKey: CommunicationAvatarViewModel/UseVoiceIcon
+  _eventFindKey: 
+  _targetPath:
+    propertyOwner: GameObjectPropertyExtensions
+    property: ActiveState
+    component: {fileID: 1373416990253490161}
+  _eventPath:
+    propertyOwner: 
+    property: 
+    component: {fileID: 0}
+  _sourcePath:
+    propertyOwner: CommunicationAvatarViewModel
+    property: UseVoiceIcon
+    component: {fileID: 0}
+  _syncOnAwake: 0
+  _bindingMode: 3

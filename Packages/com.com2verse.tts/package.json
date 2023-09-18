@@ -1,0 +1,35 @@
+{
+    "name": "com.com2verse.tts",
+    "version": "0.0.5",
+    "displayName": "Google Text-to-speech",
+    "description": "구글 api를 사용하여 텍스트를 음성으로 변환해줍니다.",
+    "changelogUrl": "https://meta-bitbucket.com2us.com/projects/C2VERSE/repos/com.com2verse.tts/browse/Assets/Deploy/CHANGELOG.md",
+    "documentationUrl": "https://meta-bitbucket.com2us.com/projects/C2VERSE/repos/com.com2verse.tts/browse/Assets/Deploy/README.md",
+    "unity": "2021.3",
+    "author": "Com2Verse",
+    "keywords": [
+        "tts"
+    ],
+    "samples": [
+        {
+            "displayName": "Required Managed DLLs",
+            "description": "Required Managed DLLs for Communication",
+            "path": "Samples~/Required Managed DLLs"
+        },
+        {
+            "displayName": "Google TTS API Key (Assets/StreamingAssets)",
+            "description": "Assets/StreamingAssets 폴더 안에 넣어둘것",
+            "path": "Samples~/StreamingAssets"
+        },
+        {
+            "displayName": "Google TTS API Resources (Assets/Resources)",
+            "description": "Assets/Resources 폴더 안에 넣어둘것",
+            "path": "Samples~/Resources"
+        }
+    ],
+    "gitDependencies": {
+        "com.com2verse.core": "https://meta-bitbucket.com2us.com/scm/c2verse/c2vclient.git?path=Packages/com.com2verse.core#1.0.0",
+        "com.com2verse.logger": "https://meta-bitbucket.com2us.com/scm/c2verse/c2vclient.git?path=Packages/com.com2verse.logger#1.0.0",
+        "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask/#2.3.3"
+    }
+}

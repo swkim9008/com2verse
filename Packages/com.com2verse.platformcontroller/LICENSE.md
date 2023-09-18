@@ -1,0 +1,3 @@
+# License
+
+Copyright ⓒ Com2Verse. All rights reserved.

@@ -1,0 +1,19 @@
+{
+  "launch": "Com2Verse.exe",
+  "icon": "icon.ico",
+  "delete": [
+    {
+      "type": "CSIDL",
+      "path": "0x1C/../LocalLow/Com2Verse/Com2Verse"
+    },
+    {
+      "type": "CSIDL",
+      "path": "0x1C/../Local/Temp/Com2Verse/Com2Verse"
+    },
+    {
+      "type": "registrykey",
+      "root": "0x80000001",
+      "path": "SOFTWARE\\Com2Verse\\Com2Verse"
+    }
+  ]
+}

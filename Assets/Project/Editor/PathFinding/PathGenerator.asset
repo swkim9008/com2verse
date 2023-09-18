@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12b83ce720b8e3243803801cee16bf8f, type: 3}
+  m_Name: PathGenerator
+  m_EditorClassIdentifier: 
+  _sceneList:
+  - BaseScene: {fileID: 102900000, guid: 797fa760a7ca8484caa99ad259c9dae1, type: 3}
+    ServerObjectScene: {fileID: 102900000, guid: 73898559488bf814f8d7619ec7564fd9,
+      type: 3}
+  - BaseScene: {fileID: 102900000, guid: 36777024d339d174fb21268630e649e2, type: 3}
+    ServerObjectScene: {fileID: 102900000, guid: d0e221d28e443d143bf0583698b6c50f,
+      type: 3}
+  - BaseScene: {fileID: 102900000, guid: 1cb93300c8d590949800a25e6696fa15, type: 3}
+    ServerObjectScene: {fileID: 102900000, guid: a3f1bc87df3b5a94cb55895c2ead5429,
+      type: 3}
+  - BaseScene: {fileID: 102900000, guid: d9d1d02639a6d5a41ac0aab7d1310530, type: 3}
+    ServerObjectScene: {fileID: 102900000, guid: eb4b0069596b68c469c3d8dffe6682a8,
+      type: 3}
+  - BaseScene: {fileID: 102900000, guid: 801bf666894a76d43b0f14c4cc0a61e5, type: 3}
+    ServerObjectScene: {fileID: 102900000, guid: 2d24327fc723238408c8646fed85b060,
+      type: 3}
+  - BaseScene: {fileID: 102900000, guid: e5b7bd698b84cfe468b7acc113b1b6fa, type: 3}
+    ServerObjectScene: {fileID: 102900000, guid: 90d9f387ed1074a43af73056dab85714,
+      type: 3}
+  - BaseScene: {fileID: 102900000, guid: 0cd9996dc9bb69f4ea8db42d3e7cf593, type: 3}
+    ServerObjectScene: {fileID: 0}
+  - BaseScene: {fileID: 102900000, guid: 96be5a5e1dc28484cada8e8d56632c01, type: 3}
+    ServerObjectScene: {fileID: 0}
+  - BaseScene: {fileID: 102900000, guid: fa0158ec5623c754f92c437ad517c8e8, type: 3}
+    ServerObjectScene: {fileID: 0}
+  - BaseScene: {fileID: 102900000, guid: 1bb88673e8b57a1459edc8bdfdde6a07, type: 3}
+    ServerObjectScene: {fileID: 0}
+  - BaseScene: {fileID: 102900000, guid: fb7ffff9d19b0f743a16328462a79fa3, type: 3}
+    ServerObjectScene: {fileID: 102900000, guid: 89013faa5984a374f84e90513e6f3eb4,
+      type: 3}
+  - BaseScene: {fileID: 102900000, guid: 1a9b98f1b4ceee84e93eab05b6948cd6, type: 3}
+    ServerObjectScene: {fileID: 102900000, guid: cef087bc2d263bf4e81dfc9f201d2b5c,
+      type: 3}
+  - BaseScene: {fileID: 102900000, guid: 39602c9c8035af44da0a6be8e0baec6a, type: 3}
+    ServerObjectScene: {fileID: 102900000, guid: 00545649dee7f9e4484004e17402b024,
+      type: 3}
+  - BaseScene: {fileID: 102900000, guid: 2afea0eb52595bc4a9a6f1a92ba0ceb2, type: 3}
+    ServerObjectScene: {fileID: 102900000, guid: d44c812a59f29f94c8b20017d0443835,
+      type: 3}
+  - BaseScene: {fileID: 102900000, guid: c597917a321b20047bbcf99bb0f33757, type: 3}
+    ServerObjectScene: {fileID: 102900000, guid: 0931d62fdbe896244b22acd34bf84236,
+      type: 3}
+  - BaseScene: {fileID: 102900000, guid: db88134e8b043f841ba1508535a38a75, type: 3}
+    ServerObjectScene: {fileID: 102900000, guid: 9a66b3d78066c1f4aa212ee1e3016ff5,
+      type: 3}
+  - BaseScene: {fileID: 102900000, guid: 4ac7ec192302a224088c1e29e29c552a, type: 3}
+    ServerObjectScene: {fileID: 102900000, guid: 8ffd3aeb06b72414abaf1a0cd2e09cf2,
+      type: 3}
+  _pathGenerateOptions:
+    Keys:
+    - DefaultOptionSettings
+    Values:
+    - CharacterRadius: 0.3
+      WalkableHeight: 2
+      WalkableClimb: 0.3
+      MaxSlope: 50
+      RasterizeTerrain: 0
+      RasterizeColliders: 1
+      RasterizeMeshes: 0
+      CellSize: 0.1
+      MinRegionSize: 0.5

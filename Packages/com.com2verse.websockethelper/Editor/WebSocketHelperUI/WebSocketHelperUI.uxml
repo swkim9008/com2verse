@@ -1,0 +1,40 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:Template name="ChatUI" src="project://database/Packages/com.com2verse.websockethelper/Editor/WebSocketHelperUI/ChatUI.uxml?fileID=9197481963319205126&amp;guid=6e377c6dcda92fc42960dac4949a0152&amp;type=3#ChatUI" />
+    <Style src="project://database/Packages/com.com2verse.uitoolkitextension/Editor/Resources/USS/Com2Verse.uss?fileID=7433441132597879392&amp;guid=e48caf10e7b202843bbccde4ffd7874a&amp;type=3#Com2Verse" />
+    <Style src="project://database/Packages/com.com2verse.websockethelper/Editor/WebSocketHelperUI/WebSocketHelperUI.uss?fileID=7433441132597879392&amp;guid=ef14c209d6b49214891b176a7f1d1d9f&amp;type=3#WebSocketHelperUI" />
+    <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx style="flex-direction: row; flex-grow: 1;">
+        <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="box-border" style="width: 30%;">
+            <Com2VerseEditor.UGC.UIToolkitExtension.Containers.ListViewEx focusable="true" name="listConnections" virtualization-method="DynamicHeight" />
+        </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+        <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx style="flex-grow: 1;">
+            <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="box-border">
+                <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="Connection Info" class="text-title" />
+                <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx style="flex-direction: row;">
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="Label" class="textrow-label" />
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Controls.TextFieldEx binding-path="_inputLabel" style="flex-grow: 1;" />
+                </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+                <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx style="flex-direction: row;">
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="URL" class="textrow-label" />
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Controls.TextFieldEx binding-path="_inputUrl" style="flex-grow: 1;" />
+                </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+                <Com2VerseEditor.UGC.UIToolkitExtension.Controls.ButtonEx text="Save" name="btnSave" />
+                <Com2VerseEditor.UGC.UIToolkitExtension.Controls.ButtonEx text="Connect / Disconnect" name="btnConnect" />
+            </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+            <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx style="flex-grow: 1;">
+                <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="box-border">
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="Send" class="text-title" />
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Controls.ButtonEx name="btnClearSendMessages" text="Clear" />
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Containers.ListViewEx focusable="true" name="sendMessages" virtualization-method="DynamicHeight" />
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Controls.TextFieldEx binding-path="_sendText" name="textSendMessage" />
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Controls.ButtonEx text="Send" name="btnSend" />
+                </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+                <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="box-border" style="flex-grow: 1;">
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="Receive" class="text-title" />
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Containers.ListViewEx focusable="true" name="receiveMessages" virtualization-method="DynamicHeight" />
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Controls.ButtonEx name="btnClearReceiveMessages" text="Clear" />
+                </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+            </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+        </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+    </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+    <ui:Instance template="ChatUI" name="ChatUI" />
+</ui:UXML>

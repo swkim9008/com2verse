@@ -1,0 +1,480 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd509840827e493c963a8e982b619dbc, type: 3}
+  m_Name: PC01_W_CUSTIOMIZE
+  m_EditorClassIdentifier: 
+  _avatarType: 1
+  _configs:
+  - _configType: 0
+    _inputID0: 0
+    _inputID1: 0
+    _outputName0: BS_browInnerUp
+    _outputName1: 
+    _blendShapeMethodType: 0
+    _maxValue: 75
+    _minValue: -15
+    _refName0: 
+    _refName1: 
+    _ownerColorID: 0
+    _targetMaterialPropertyName: 
+    _isSkinConfig: 0
+    _targetBonePath: 
+    _constraintType: 0
+    _constraintFloatParam: 0
+  - _configType: 0
+    _inputID0: 3
+    _inputID1: 0
+    _outputName0: BS_browInnerWide
+    _outputName1: 
+    _blendShapeMethodType: 0
+    _maxValue: 50
+    _minValue: -40
+    _refName0: 
+    _refName1: 
+    _ownerColorID: 0
+    _targetMaterialPropertyName: 
+    _isSkinConfig: 0
+    _targetBonePath: 
+    _constraintType: 0
+    _constraintFloatParam: 0
+  - _configType: 2
+    _inputID0: 0
+    _inputID1: 0
+    _outputName0: 
+    _outputName1: 
+    _blendShapeMethodType: 0
+    _maxValue: 0
+    _minValue: 0
+    _refName0: 
+    _refName1: 
+    _ownerColorID: 80
+    _targetMaterialPropertyName: _MaskColor
+    _isSkinConfig: 0
+    _targetBonePath: 
+    _constraintType: 0
+    _constraintFloatParam: 0
+  - _configType: 0
+    _inputID0: 1
+    _inputID1: 0
+    _outputName0: BS_browOuterUp
+    _outputName1: 
+    _blendShapeMethodType: 0
+    _maxValue: 80
+    _minValue: -15
+    _refName0: 
+    _refName1: 
+    _ownerColorID: 0
+    _targetMaterialPropertyName: 
+    _isSkinConfig: 0
+    _targetBonePath: 
+    _constraintType: 0
+    _constraintFloatParam: 0
+  - _configType: 0
+    _inputID0: 2
+    _inputID1: 0
+    _outputName0: BS_browThick
+    _outputName1: 
+    _blendShapeMethodType: 0
+    _maxValue: 100
+    _minValue: -70
+    _refName0: 
+    _refName1: 
+    _ownerColorID: 0
+    _targetMaterialPropertyName: 
+    _isSkinConfig: 0
+    _targetBonePath: 
+    _constraintType: 0
+    _constraintFloatParam: 0
+  - _configType: 0
+    _inputID0: 17
+    _inputID1: 0
+    _outputName0: BS_cheekOut
+    _outputName1: 
+    _blendShapeMethodType: 0
+    _maxValue: 70
+    _minValue: -30
+    _refName0: 
+    _refName1: 
+    _ownerColorID: 0
+    _targetMaterialPropertyName: 
+    _isSkinConfig: 0
+    _targetBonePath: 
+    _constraintType: 0
+    _constraintFloatParam: 0
+  - _configType: 0
+    _inputID0: 17
+    _inputID1: 18
+    _outputName0: BS_cheekOut_chinWide_fix
+    _outputName1: 
+    _blendShapeMethodType: 2
+    _maxValue: 0
+    _minValue: 0
+    _refName0: BS_cheekOut
+    _refName1: BS_chinWide
+    _ownerColorID: 0
+    _targetMaterialPropertyName: 
+    _isSkinConfig: 0
+    _targetBonePath: 
+    _constraintType: 0
+    _constraintFloatParam: 0
+  - _configType: 0
+    _inputID0: 18
+    _inputID1: 0
+    _outputName0: BS_chinWide
+    _outputName1: BS_chinNarrow
+    _blendShapeMethodType: 1
+    _maxValue: 70
+    _minValue: -50
+    _refName0: 
+    _refName1: 
+    _ownerColorID: 0
+    _targetMaterialPropertyName: 
+    _isSkinConfig: 0
+    _targetBonePath: 
+    _constraintType: 0
+    _constraintFloatParam: 0
+  - _configType: 0
+    _inputID0: 4
+    _inputID1: 0
+    _outputName0: BS_eyeLidUp
+    _outputName1: BS_eyeLidDown
+    _blendShapeMethodType: 1
+    _maxValue: 70
+    _minValue: -40
+    _refName0: 
+    _refName1: 
+    _ownerColorID: 0
+    _targetMaterialPropertyName: 
+    _isSkinConfig: 0
+    _targetBonePath: 
+    _constraintType: 0
+    _constraintFloatParam: 0
+  - _configType: 0
+    _inputID0: 7
+    _inputID1: 0
+    _outputName0: BS_eyeScalePos
+    _outputName1: 
+    _blendShapeMethodType: 0
+    _maxValue: 30
+    _minValue: -100
+    _refName0: 
+    _refName1: 
+    _ownerColorID: 0
+    _targetMaterialPropertyName: 
+    _isSkinConfig: 0
+    _targetBonePath: 
+    _constraintType: 0
+    _constraintFloatParam: 0
+  - _configType: 0
+    _inputID0: 6
+    _inputID1: 0
+    _outputName0: BS_eyeScaleYPos
+    _outputName1: 
+    _blendShapeMethodType: 0
+    _maxValue: 40
+    _minValue: -30
+    _refName0: 
+    _refName1: 
+    _ownerColorID: 0
+    _targetMaterialPropertyName: 
+    _isSkinConfig: 0
+    _targetBonePath: 
+    _constraintType: 0
+    _constraintFloatParam: 0
+  - _configType: 0
+    _inputID0: 5
+    _inputID1: 0
+    _outputName0: BS_eyeWide
+    _outputName1: 
+    _blendShapeMethodType: 0
+    _maxValue: 40
+    _minValue: -100
+    _refName0: 
+    _refName1: 
+    _ownerColorID: 0
+    _targetMaterialPropertyName: 
+    _isSkinConfig: 0
+    _targetBonePath: 
+    _constraintType: 0
+    _constraintFloatParam: 0
+  - _configType: 0
+    _inputID0: 19
+    _inputID1: 0
+    _outputName0: BS_faceLong
+    _outputName1: 
+    _blendShapeMethodType: 0
+    _maxValue: 80
+    _minValue: -80
+    _refName0: 
+    _refName1: 
+    _ownerColorID: 0
+    _targetMaterialPropertyName: 
+    _isSkinConfig: 0
+    _targetBonePath: 
+    _constraintType: 0
+    _constraintFloatParam: 0
+  - _configType: 0
+    _inputID0: 16
+    _inputID1: 0
+    _outputName0: BS_mouthThick
+    _outputName1: 
+    _blendShapeMethodType: 0
+    _maxValue: 60
+    _minValue: -40
+    _refName0: 
+    _refName1: 
+    _ownerColorID: 0
+    _targetMaterialPropertyName: 
+    _isSkinConfig: 0
+    _targetBonePath: 
+    _constraintType: 0
+    _constraintFloatParam: 0
+  - _configType: 0
+    _inputID0: 14
+    _inputID1: 0
+    _outputName0: BS_mouthUp
+    _outputName1: 
+    _blendShapeMethodType: 0
+    _maxValue: 30
+    _minValue: -30
+    _refName0: 
+    _refName1: 
+    _ownerColorID: 0
+    _targetMaterialPropertyName: 
+    _isSkinConfig: 0
+    _targetBonePath: 
+    _constraintType: 0
+    _constraintFloatParam: 0
+  - _configType: 0
+    _inputID0: 15
+    _inputID1: 0
+    _outputName0: BS_mouthWide
+    _outputName1: BS_mouthNarrow
+    _blendShapeMethodType: 1
+    _maxValue: 30
+    _minValue: -50
+    _refName0: 
+    _refName1: 
+    _ownerColorID: 0
+    _targetMaterialPropertyName: 
+    _isSkinConfig: 0
+    _targetBonePath: 
+    _constraintType: 0
+    _constraintFloatParam: 0
+  - _configType: 0
+    _inputID0: 12
+    _inputID1: 0
+    _outputName0: BS_nasalBridgeOut
+    _outputName1: 
+    _blendShapeMethodType: 0
+    _maxValue: 60
+    _minValue: -30
+    _refName0: 
+    _refName1: 
+    _ownerColorID: 0
+    _targetMaterialPropertyName: 
+    _isSkinConfig: 0
+    _targetBonePath: 
+    _constraintType: 0
+    _constraintFloatParam: 0
+  - _configType: 0
+    _inputID0: 13
+    _inputID1: 0
+    _outputName0: BS_noseAngleUp
+    _outputName1: 
+    _blendShapeMethodType: 0
+    _maxValue: 30
+    _minValue: -70
+    _refName0: 
+    _refName1: 
+    _ownerColorID: 0
+    _targetMaterialPropertyName: 
+    _isSkinConfig: 0
+    _targetBonePath: 
+    _constraintType: 0
+    _constraintFloatParam: 0
+  - _configType: 0
+    _inputID0: 11
+    _inputID1: 0
+    _outputName0: BS_noseOut
+    _outputName1: 
+    _blendShapeMethodType: 0
+    _maxValue: 100
+    _minValue: -80
+    _refName0: 
+    _refName1: 
+    _ownerColorID: 0
+    _targetMaterialPropertyName: 
+    _isSkinConfig: 0
+    _targetBonePath: 
+    _constraintType: 0
+    _constraintFloatParam: 0
+  - _configType: 0
+    _inputID0: 9
+    _inputID1: 0
+    _outputName0: BS_noseUp
+    _outputName1: 
+    _blendShapeMethodType: 0
+    _maxValue: 40
+    _minValue: -15
+    _refName0: 
+    _refName1: 
+    _ownerColorID: 0
+    _targetMaterialPropertyName: 
+    _isSkinConfig: 0
+    _targetBonePath: 
+    _constraintType: 0
+    _constraintFloatParam: 0
+  - _configType: 0
+    _inputID0: 10
+    _inputID1: 0
+    _outputName0: BS_noseWide
+    _outputName1: 
+    _blendShapeMethodType: 0
+    _maxValue: 100
+    _minValue: -15
+    _refName0: 
+    _refName1: 
+    _ownerColorID: 0
+    _targetMaterialPropertyName: 
+    _isSkinConfig: 0
+    _targetBonePath: 
+    _constraintType: 0
+    _constraintFloatParam: 0
+  - _configType: 1
+    _inputID0: 8
+    _inputID1: 0
+    _outputName0: 
+    _outputName1: 
+    _blendShapeMethodType: 0
+    _maxValue: 0.3
+    _minValue: 0.999
+    _refName0: 
+    _refName1: 
+    _ownerColorID: 0
+    _targetMaterialPropertyName: _IrisSize
+    _isSkinConfig: 0
+    _targetBonePath: 
+    _constraintType: 0
+    _constraintFloatParam: 0
+  - _configType: 2
+    _inputID0: 0
+    _inputID1: 0
+    _outputName0: 
+    _outputName1: 
+    _blendShapeMethodType: 0
+    _maxValue: 0
+    _minValue: 0
+    _refName0: 
+    _refName1: 
+    _ownerColorID: 20
+    _targetMaterialPropertyName: _EyebrowsColor
+    _isSkinConfig: 0
+    _targetBonePath: 
+    _constraintType: 0
+    _constraintFloatParam: 0
+  - _configType: 2
+    _inputID0: 0
+    _inputID1: 0
+    _outputName0: 
+    _outputName1: 
+    _blendShapeMethodType: 0
+    _maxValue: 0
+    _minValue: 0
+    _refName0: 
+    _refName1: 
+    _ownerColorID: 60
+    _targetMaterialPropertyName: _MaskColor
+    _isSkinConfig: 0
+    _targetBonePath: 
+    _constraintType: 0
+    _constraintFloatParam: 0
+  - _configType: 2
+    _inputID0: 0
+    _inputID1: 0
+    _outputName0: 
+    _outputName1: 
+    _blendShapeMethodType: 0
+    _maxValue: 0
+    _minValue: 0
+    _refName0: 
+    _refName1: 
+    _ownerColorID: 30
+    _targetMaterialPropertyName: _IrisColor
+    _isSkinConfig: 0
+    _targetBonePath: 
+    _constraintType: 0
+    _constraintFloatParam: 0
+  - _configType: 2
+    _inputID0: 0
+    _inputID1: 0
+    _outputName0: 
+    _outputName1: 
+    _blendShapeMethodType: 0
+    _maxValue: 0
+    _minValue: 0
+    _refName0: 
+    _refName1: 
+    _ownerColorID: 40
+    _targetMaterialPropertyName: _LipsColor
+    _isSkinConfig: 0
+    _targetBonePath: 
+    _constraintType: 0
+    _constraintFloatParam: 0
+  - _configType: 2
+    _inputID0: 0
+    _inputID1: 0
+    _outputName0: 
+    _outputName1: 
+    _blendShapeMethodType: 0
+    _maxValue: 0
+    _minValue: 0
+    _refName0: 
+    _refName1: 
+    _ownerColorID: 90
+    _targetMaterialPropertyName: _MaskColor
+    _isSkinConfig: 0
+    _targetBonePath: 
+    _constraintType: 0
+    _constraintFloatParam: 0
+  - _configType: 2
+    _inputID0: 0
+    _inputID1: 0
+    _outputName0: 
+    _outputName1: 
+    _blendShapeMethodType: 0
+    _maxValue: 0
+    _minValue: 0
+    _refName0: 
+    _refName1: 
+    _ownerColorID: 10
+    _targetMaterialPropertyName: _SkinColor
+    _isSkinConfig: 1
+    _targetBonePath: 
+    _constraintType: 0
+    _constraintFloatParam: 0
+  - _configType: 2
+    _inputID0: 0
+    _inputID1: 0
+    _outputName0: 
+    _outputName1: 
+    _blendShapeMethodType: 0
+    _maxValue: 0
+    _minValue: 0
+    _refName0: 
+    _refName1: 
+    _ownerColorID: 70
+    _targetMaterialPropertyName: _MaskColor
+    _isSkinConfig: 0
+    _targetBonePath: 
+    _constraintType: 0
+    _constraintFloatParam: 0

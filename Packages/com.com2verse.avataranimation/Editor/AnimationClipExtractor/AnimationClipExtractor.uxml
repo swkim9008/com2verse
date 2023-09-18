@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.com2verse.uitoolkitextension/Editor/Resources/USS/Com2Verse.uss?fileID=7433441132597879392&amp;guid=e48caf10e7b202843bbccde4ffd7874a&amp;type=3#Com2Verse" />
+    <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx name="Header" style="height: auto;">
+        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="현재 선택된 폴더: " name="SelectedFolderLabel" />
+        <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx name="ClipTypeButtonHeader" style="flex-direction: row; align-items: auto; justify-content: center;">
+            <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx name="AlignHelper" />
+        </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+        <Com2VerseEditor.UGC.UIToolkitExtension.Extensions.RoundButton name="Btn_SelectAllClipOfCurrentType" text="선택된 타입의 모든 클릭 선택하기" />
+        <Com2VerseEditor.UGC.UIToolkitExtension.Extensions.RoundButton name="Btn_SelectAllClip" text="모든 클립 선택하기" />
+    </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+    <Com2VerseEditor.UGC.UIToolkitExtension.Extensions.VerticalScrollView style="max-height: 60%;">
+        <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx name="Content" style="flex-direction: column; padding-left: 12px; padding-right: 0; padding-top: 6px; padding-bottom: 6px;" />
+    </Com2VerseEditor.UGC.UIToolkitExtension.Extensions.VerticalScrollView>
+    <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx name="Footer">
+        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.ToggleEx label="이벤트 데이터를 보존" name="Toggle_PreserveEvent" value="true" style="flex-direction: row-reverse; align-items: center; justify-content: space-around; height: 15px; max-height: 75%;" />
+        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.ButtonEx name="Btn_ExtractAnimationClip" text="애니메이션 클립 추출하기" />
+    </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+</ui:UXML>

@@ -1,0 +1,106 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.com2verse.c2vapi/Editor/UI/Com2VerseApi.uss?fileID=7433441132597879392&amp;guid=bae933b2440aef34e8541769a90ef39c&amp;type=3#Com2VerseApi" />
+    <Com2VerseEditor.UGC.UIToolkitExtension.ToolBar.ToolbarEx>
+        <Com2VerseEditor.UGC.UIToolkitExtension.ToolBar.ToolbarButtonEx text="코드 생성" name="btnCodeGenerate" />
+        <Com2VerseEditor.UGC.UIToolkitExtension.ToolBar.ToolbarButtonEx name="btnCodeDelete" text="코드 삭제" />
+        <Com2VerseEditor.UGC.UIToolkitExtension.ToolBar.ToolbarButtonEx name="btnAssetRefresh" text="새로고침" />
+    </Com2VerseEditor.UGC.UIToolkitExtension.ToolBar.ToolbarEx>
+    <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="box-border" style="min-height: 45px;">
+        <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx style="flex-direction: row;">
+            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="저장 경로" />
+            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.TextFieldEx readonly="true" binding-path="_savePath" style="flex-grow: 1;" />
+            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.ButtonEx text="변경" name="btnChangeSavePath" />
+            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.ButtonEx name="btnResetSavePath" text="초기화" />
+        </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+    </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+    <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+        <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx style="flex-direction: row; flex-grow: 1;">
+            <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx style="flex-grow: 1; max-width: 444px; min-width: 444px;">
+                <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="box-border" style="margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; min-height: 340px;">
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="인증" class="label-title" style="border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-bottom-width: 1px;" />
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="box-border">
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="컴투버스 인증 (Test 환경)" class="label-title-small" />
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx style="flex-direction: row; justify-content: space-between;">
+                            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="ID" class="row-label" />
+                            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.TextFieldEx binding-path="_c2vId" class="row-inputtext" style="flex-grow: 1;" />
+                        </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx style="flex-direction: row; justify-content: space-between;">
+                            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="엑세스 토큰" class="row-label" />
+                            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.TextFieldEx readonly="true" binding-path="_c2vAccessToken" class="row-inputtext" style="flex-grow: 1;" />
+                        </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.ButtonEx text="초기화" name="btnClearAuth" />
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.ButtonEx text="로그인 및 토큰 발급" name="btnLoginAndAuth" />
+                    </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="box-border">
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="서비스 인증 (Com2us)" class="label-title-small" />
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx style="flex-direction: row; justify-content: space-between;">
+                            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="엑세스 토큰" class="row-label" />
+                            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.TextFieldEx binding-path="_serviceAccessToken" class="row-inputtext" style="flex-grow: 1;" />
+                        </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx style="flex-direction: row; justify-content: space-between;">
+                            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="리프레시 토큰" class="row-label" />
+                            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.TextFieldEx binding-path="_serviceRefreshToken" class="row-inputtext" style="flex-grow: 1;" />
+                        </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.ButtonEx text="인증 페이지 열기" name="btnServiceAuth" />
+                    </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+                </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+                <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="box-border" style="min-height: 156px;">
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="Swagger" class="label-title" />
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx style="flex-direction: row;">
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.ButtonEx name="btnOpenSwaggerInfo" text="SwaggerInfo.json 열기" style="flex-grow: 1;" />
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.ButtonEx name="btnRefreshSwagger" text="새로 고침" />
+                    </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Controls.ButtonEx text="초기화" name="btnClearSwagger" />
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx name="viewLinks" style="flex-grow: 1;" />
+                </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+                <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx name="layoutComponents" class="box-border">
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="Components" class="label-title" />
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Containers.ScrollViewEx style="max-height: 400px;">
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx name="componentItems" />
+                    </Com2VerseEditor.UGC.UIToolkitExtension.Containers.ScrollViewEx>
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Containers.ListViewEx focusable="true" name="listComponents" />
+                </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+            </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+            <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="box-border" style="flex-grow: 1; min-width: 320px; max-width: 800px;">
+                <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="API 목록" class="label-title" />
+                <Com2VerseEditor.UGC.UIToolkitExtension.Controls.RadioButtonGroupEx name="apiGroup" />
+                <Com2VerseEditor.UGC.UIToolkitExtension.Containers.ListViewEx focusable="true" name="listApis" />
+            </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+            <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx name="layoutRequestApi" class="box-border" style="display: flex; flex-grow: 1; min-width: 300px;">
+                <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="API 요청" class="label-title" />
+                <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="box-border">
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="API 정보" class="label-title-small" />
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="row-item" style="flex-direction: row; flex-grow: 1;">
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="카테고리" class="row-label" />
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx binding-path="_apiCategory" />
+                    </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="row-item" style="flex-direction: row; flex-grow: 1;">
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="API 이름" class="row-label" />
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx binding-path="_selectedParamName" />
+                    </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="row-item" style="flex-direction: row; flex-grow: 1;">
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="API URL" class="row-label" />
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx binding-path="_apiUrl" />
+                    </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="row-item" style="flex-direction: row; flex-grow: 1;">
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="Request Type" class="row-label" />
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx binding-path="_apiRequestType" />
+                    </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+                </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+                <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="box-border">
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="Parameters" class="label-title-small" />
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx name="paramItems" />
+                </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+                <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="box-border">
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="Request Body" class="label-title-small" />
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx name="requestBodyItems" />
+                </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+                <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="box-border">
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="Response" class="label-title-small" />
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx name="responseItems" />
+                </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+                <Com2VerseEditor.UGC.UIToolkitExtension.Controls.ButtonEx label="TTT" name="btnSendRequest" text="전송" />
+            </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+        </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+    </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+</ui:UXML>

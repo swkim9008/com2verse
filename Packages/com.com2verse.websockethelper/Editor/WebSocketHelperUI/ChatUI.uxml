@@ -1,0 +1,35 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Packages/com.com2verse.websockethelper/Editor/WebSocketHelperUI/WebSocketHelperUI.uss?fileID=7433441132597879392&amp;guid=ef14c209d6b49214891b176a7f1d1d9f&amp;type=3#WebSocketHelperUI" />
+    <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="box-border">
+        <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx style="flex-direction: row; align-items: center;">
+            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="채팅 테스트" class="text-title" style="flex-grow: 1;" />
+            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="STATE" name="chatState" style="position: absolute; right: 0; -unity-font-style: bold;" />
+        </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+        <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="box-border" style="max-height: 144px; min-height: 144px;">
+            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="서버 설정" />
+            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.TextFieldEx label="URL" binding-path="_chatServerAddr" />
+            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.TextFieldEx label="User ID" binding-path="_chatUserId" />
+            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.TextFieldEx label="Device ID" binding-path="_chatDeviceId" />
+            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.TextFieldEx label="App ID" binding-path="_chatAppId" />
+            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.ButtonEx text="Connect / Disconnect" name="btnChatConnect" />
+            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.ButtonEx name="btnChatReset" text="Reset" />
+        </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+        <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx name="layoutChatMenu" class="box-border">
+            <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx style="height: 58px; max-height: 58px; min-height: 58px;">
+                <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Controls.TextFieldEx label="Message" binding-path="_chatMessage" name="textChatMessage" />
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Controls.TextFieldEx label="Area" binding-path="_chatArea" />
+                </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+                <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx style="flex-direction: row;">
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Controls.ButtonEx text="Send" name="btnChatSend" style="flex-grow: 1;" />
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Controls.ButtonEx text="Move Area" name="btnChatMoveArea" style="flex-grow: 1;" />
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Controls.ButtonEx text="Clear All" name="btnChatClear" style="flex-grow: 1;" />
+                </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+            </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+            <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="box-border" style="flex-direction: row;">
+                <Com2VerseEditor.UGC.UIToolkitExtension.Containers.ListViewEx focusable="true" name="listChatChannels" virtualization-method="DynamicHeight" style="width: 100px; min-width: 100px;" />
+                <Com2VerseEditor.UGC.UIToolkitExtension.Containers.ListViewEx focusable="true" name="listChatMessages" virtualization-method="DynamicHeight" style="flex-grow: 1;" />
+            </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+        </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+    </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+</ui:UXML>

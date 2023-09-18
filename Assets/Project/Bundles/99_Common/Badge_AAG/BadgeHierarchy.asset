@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f83ef44f3c4720248a253409952e2cd1, type: 3}
+  m_Name: BadgeHierarchy
+  m_EditorClassIdentifier: 
+  _root:
+    Data: ROOT
+    Children:
+    - Data: MAIN_MENU
+      Children:
+      - Data: MAIN_MENU_SUB1
+        Children:
+        - Data: MAIN_MENU_SUB1_TAB1
+          Children:
+          - Data: MAIN_MENU_SUB1_TAB1_ITEM
+            Children: []
+        - Data: MAIN_MENU_SUB1_TAB2
+          Children:
+          - Data: MAIN_MENU_SUB1_TAB2_ITEM
+            Children: []

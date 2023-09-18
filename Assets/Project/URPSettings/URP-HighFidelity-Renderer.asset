@@ -1,0 +1,800 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8449175021036982059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e44ee7914f29a94399c019a14ff02da, type: 3}
+  m_Name: StencilOverridePlayer
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  Settings:
+    PassTag: ExtendedRenderObjectsFeature
+    Event: 500
+    FilterSettings:
+      RenderQueueType: 0
+      LayerMask:
+        serializedVersion: 2
+        m_Bits: 72
+      PassNames: []
+      RenderingLayerMask: 256
+    OverrideMaterial: {fileID: 0}
+    OverrideMaterialPassIndex: 0
+    OverrideDepthState: 0
+    DepthCompareFunction: 4
+    EnableWrite: 1
+    StencilSettings:
+      overrideStencilState: 1
+      stencilReference: 7
+      stencilCompareFunction: 2
+      passOperation: 2
+      failOperation: 2
+      zFailOperation: 0
+--- !u!114 &-6772469682690216095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 599ebfddc3394b30bcfeaa78ee0ecfaa, type: 3}
+  m_Name: MotionBlurRenderFeature
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  _showInSceneView: 0
+  _motionBlurShader: {fileID: 0}
+--- !u!114 &-2584675834422928292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78c64e27b5b943cf8418996e364c67d2, type: 3}
+  m_Name: GlobalCopyPassRenderFeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  _mipDownCompute: {fileID: 7200000, guid: c132e29ef7fbd554892b859b01137c07, type: 3}
+  _yFlip: 0
+  _passCount: 3
+  _resolution: 4
+--- !u!114 &-2351814908025481416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e44ee7914f29a94399c019a14ff02da, type: 3}
+  m_Name: StencilOverrideOther
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  Settings:
+    PassTag: ExtendedRenderObjectsFeature
+    Event: 500
+    FilterSettings:
+      RenderQueueType: 0
+      LayerMask:
+        serializedVersion: 2
+        m_Bits: 8
+      PassNames: []
+      RenderingLayerMask: 512
+    OverrideMaterial: {fileID: 0}
+    OverrideMaterialPassIndex: 0
+    OverrideDepthState: 0
+    DepthCompareFunction: 4
+    EnableWrite: 1
+    StencilSettings:
+      overrideStencilState: 1
+      stencilReference: 8
+      stencilCompareFunction: 2
+      passOperation: 2
+      failOperation: 2
+      zFailOperation: 0
+--- !u!114 &-1878332245247344467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f62c9c65cf3354c93be831c8bc075510, type: 3}
+  m_Name: SSAO
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  m_Shader: {fileID: 4800000, guid: 0849e84e3d62649e8882e9d6f056a017, type: 3}
+  m_Settings:
+    Downsample: 0
+    AfterOpaque: 1
+    Source: 0
+    NormalSamples: 1
+    Intensity: 0.5
+    DirectLightingStrength: 0.25
+    Radius: 0.25
+    SampleCount: 12
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de640fe3d0db1804a85f9fc8f5cadab6, type: 3}
+  m_Name: URP-HighFidelity-Renderer
+  m_EditorClassIdentifier: 
+  debugShaders:
+    debugReplacementPS: {fileID: 4800000, guid: cf852408f2e174538bcd9b7fda1c5ae7,
+      type: 3}
+  m_RendererFeatures:
+  - {fileID: -1878332245247344467}
+  - {fileID: 7399090843486640496}
+  - {fileID: 4890298923587695051}
+  - {fileID: -6772469682690216095}
+  - {fileID: 2413575862872009469}
+  - {fileID: -8449175021036982059}
+  - {fileID: 7292178901772222247}
+  - {fileID: 1359889035912562245}
+  - {fileID: -2351814908025481416}
+  - {fileID: 6357686282695234198}
+  - {fileID: -2584675834422928292}
+  - {fileID: 1683785811992563408}
+  - {fileID: 7162133034596242576}
+  - {fileID: 5021776983774446048}
+  m_RendererFeatureMap: adc0de57c6d2eee570d9dd8aebd9ae66cb71eb09f6d4dd4361af25a7b45a03a2fd6af1a875be7e21d5b0fc811580be8a273fbb561306336545468487df4bdf123857ac35cdac5cdf96526c59fd093b585c5cafd5056321dcd0cea86146025e17901433610c026563e0c11b6b8fefb045
+  m_UseNativeRenderPass: 0
+  postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
+  xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
+  shaders:
+    blitPS: {fileID: 4800000, guid: c17132b1f77d20942aa75f8429c0f8bc, type: 3}
+    copyDepthPS: {fileID: 4800000, guid: d6dae50ee9e1bfa4db75f19f99355220, type: 3}
+    screenSpaceShadowPS: {fileID: 0}
+    samplingPS: {fileID: 4800000, guid: 04c410c9937594faa893a11dceb85f7e, type: 3}
+    stencilDeferredPS: {fileID: 4800000, guid: e9155b26e1bc55942a41e518703fe304, type: 3}
+    fallbackErrorPS: {fileID: 4800000, guid: e6e9a19c3678ded42a3bc431ebef7dbd, type: 3}
+    materialErrorPS: {fileID: 4800000, guid: 5fd9a8feb75a4b5894c241777f519d4e, type: 3}
+    coreBlitPS: {fileID: 4800000, guid: 93446b5c5339d4f00b85c159e1159b7c, type: 3}
+    coreBlitColorAndDepthPS: {fileID: 4800000, guid: d104b2fc1ca6445babb8e90b0758136b,
+      type: 3}
+    cameraMotionVector: {fileID: 4800000, guid: c56b7e0d4c7cb484e959caeeedae9bbf,
+      type: 3}
+    objectMotionVector: {fileID: 4800000, guid: 7b3ede40266cd49a395def176e1bc486,
+      type: 3}
+  m_AssetVersion: 2
+  m_OpaqueLayerMask:
+    serializedVersion: 2
+    m_Bits: 2147483647
+  m_TransparentLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_DefaultStencilState:
+    overrideStencilState: 0
+    stencilReference: 0
+    stencilCompareFunction: 8
+    passOperation: 2
+    failOperation: 0
+    zFailOperation: 0
+  m_ShadowTransparentReceive: 1
+  m_RenderingMode: 1
+  m_DepthPrimingMode: 0
+  m_CopyDepthMode: 0
+  m_AccurateGbufferNormals: 0
+  m_ClusteredRendering: 0
+  m_TileSize: 32
+  m_IntermediateTextureMode: 0
+--- !u!114 &1359889035912562245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e44ee7914f29a94399c019a14ff02da, type: 3}
+  m_Name: Outline2Selection
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  Settings:
+    PassTag: ExtendedRenderObjectsFeature
+    Event: 500
+    FilterSettings:
+      RenderQueueType: 0
+      LayerMask:
+        serializedVersion: 2
+        m_Bits: 64
+      PassNames: []
+      RenderingLayerMask: 256
+    OverrideMaterial: {fileID: 2100000, guid: 0dbe5a611d644374a820fd35b4c4cc25, type: 2}
+    OverrideMaterialPassIndex: 0
+    OverrideDepthState: 0
+    DepthCompareFunction: 7
+    EnableWrite: 1
+    StencilSettings:
+      overrideStencilState: 1
+      stencilReference: 7
+      stencilCompareFunction: 5
+      passOperation: 0
+      failOperation: 0
+      zFailOperation: 0
+--- !u!114 &1683785811992563408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e44ee7914f29a94399c019a14ff02da, type: 3}
+  m_Name: LectureScreen
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  Settings:
+    PassTag: ExtendedRenderObjectsFeature
+    Event: 600
+    FilterSettings:
+      RenderQueueType: 1
+      LayerMask:
+        serializedVersion: 2
+        m_Bits: 32
+      PassNames: []
+      RenderingLayerMask: 2048
+    OverrideMaterial: {fileID: 2100000, guid: db0c0283f2fd5cf438659170aeda599a, type: 2}
+    OverrideMaterialPassIndex: 0
+    OverrideDepthState: 0
+    DepthCompareFunction: 4
+    EnableWrite: 0
+    StencilSettings:
+      overrideStencilState: 0
+      stencilReference: 0
+      stencilCompareFunction: 8
+      passOperation: 0
+      failOperation: 0
+      zFailOperation: 0
+--- !u!114 &2413575862872009469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d05f35c649040cbaf46d7fb1ac41714, type: 3}
+  m_Name: VolumeScatteringRenderFeature
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  _material: {fileID: 2100000, guid: fca42562c3df89946a3e329e845e6393, type: 2}
+  _scatterSteps: 24
+  _scatterDistance: 0.34
+  _intensity: 0.033
+  _stepDecayRate: 0.966
+--- !u!114 &4890298923587695051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7573e984b39f440429d2f32774472932, type: 3}
+  m_Name: RainRenderFeature
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  _rainShader: {fileID: 4800000, guid: 366bab85724847a3b6bc8569c0139fe8, type: 3}
+  _renderPassEvent: 500
+  _rainCountCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 9514.275
+      outSlope: 9514.275
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.070853315
+    - serializedVersion: 3
+      time: 0.32301465
+      value: 9772.751
+      inSlope: 84446.96
+      outSlope: 84446.96
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.08565819
+      outWeight: 0.17598853
+    - serializedVersion: 3
+      time: 0.49343053
+      value: 33996.31
+      inSlope: 76921.85
+      outSlope: 76921.85
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.07107203
+    - serializedVersion: 3
+      time: 1
+      value: 50000
+      inSlope: 7327.437
+      outSlope: 7327.437
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.11380436
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _rainSpeedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.060271807
+      outSlope: 0.060271807
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.031984333
+    - serializedVersion: 3
+      time: 1
+      value: 0.4
+      inSlope: 0.009143492
+      outSlope: 0.009143492
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.03328991
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _rainWidthCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.028856777
+      outSlope: 0.028856777
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.09931865
+    - serializedVersion: 3
+      time: 0.54528046
+      value: 0.012884295
+      inSlope: 0.014113917
+      outSlope: 0.014113917
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.15675712
+    - serializedVersion: 3
+      time: 1
+      value: 0.015
+      inSlope: 0.0030836733
+      outSlope: 0.0030836733
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.121727586
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _rainLengthCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 20.753687
+      outSlope: 20.753687
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.049841795
+    - serializedVersion: 3
+      time: 1
+      value: 8
+      inSlope: 0.31749326
+      outSlope: 0.31749326
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.049465526
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _rainColorGradient:
+    serializedVersion: 2
+    key0: {r: 0.5566038, g: 0.5566038, b: 0.5566038, a: 1}
+    key1: {r: 0.9953842, g: 0.93624085, b: 0.6983444, a: 1}
+    key2: {r: 0.6761599, g: 0.6809324, b: 0.6981132, a: 0}
+    key3: {r: 0.6761599, g: 0.6809324, b: 0.6981132, a: 0}
+    key4: {r: 0.6761599, g: 0.6809324, b: 0.6981132, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 37779
+    ctime2: 65535
+    ctime3: 65535
+    ctime4: 65535
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 3
+    m_NumAlphaKeys: 2
+  _rainRandomizeDirectionCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.018977035
+      outSlope: 0.018977035
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.047341898
+    - serializedVersion: 3
+      time: 0.52036947
+      value: 0.17593014
+      inSlope: 0.005267845
+      outSlope: 0.005267845
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.13692321
+    - serializedVersion: 3
+      time: 0.9805908
+      value: 0.075666815
+      inSlope: -0.13457365
+      outSlope: -0.13457365
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.07081602
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &5021776983774446048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e44ee7914f29a94399c019a14ff02da, type: 3}
+  m_Name: SmalltalkOverride
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  Settings:
+    PassTag: ExtendedRenderObjectsFeature
+    Event: 500
+    FilterSettings:
+      RenderQueueType: 0
+      LayerMask:
+        serializedVersion: 2
+        m_Bits: 64
+      PassNames: []
+      RenderingLayerMask: 4096
+    OverrideMaterial: {fileID: 2100000, guid: e887c0d5a45f5ed4fb67359d776f5b6b, type: 2}
+    OverrideMaterialPassIndex: 0
+    OverrideDepthState: 1
+    DepthCompareFunction: 8
+    EnableWrite: 1
+    StencilSettings:
+      overrideStencilState: 1
+      stencilReference: 7
+      stencilCompareFunction: 5
+      passOperation: 2
+      failOperation: 2
+      zFailOperation: 0
+--- !u!114 &6357686282695234198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e44ee7914f29a94399c019a14ff02da, type: 3}
+  m_Name: SpatialGrid
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  Settings:
+    PassTag: ExtendedRenderObjectsFeature
+    Event: 500
+    FilterSettings:
+      RenderQueueType: 0
+      LayerMask:
+        serializedVersion: 2
+        m_Bits: 449
+      PassNames: []
+      RenderingLayerMask: 1024
+    OverrideMaterial: {fileID: 2100000, guid: d811d88f58899b549b3ef119e0b6896d, type: 2}
+    OverrideMaterialPassIndex: 0
+    OverrideDepthState: 0
+    DepthCompareFunction: 4
+    EnableWrite: 1
+    StencilSettings:
+      overrideStencilState: 0
+      stencilReference: 0
+      stencilCompareFunction: 8
+      passOperation: 0
+      failOperation: 0
+      zFailOperation: 0
+--- !u!114 &7162133034596242576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e44ee7914f29a94399c019a14ff02da, type: 3}
+  m_Name: TMPro Overlay
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  Settings:
+    PassTag: ExtendedRenderObjectsFeature
+    Event: 600
+    FilterSettings:
+      RenderQueueType: 1
+      LayerMask:
+        serializedVersion: 2
+        m_Bits: 32
+      PassNames: []
+      RenderingLayerMask: 1024
+    OverrideMaterial: {fileID: 2100000, guid: c0caf7d8dfa6e2b4186e03a4697ea630, type: 2}
+    OverrideMaterialPassIndex: 0
+    OverrideDepthState: 0
+    DepthCompareFunction: 4
+    EnableWrite: 0
+    StencilSettings:
+      overrideStencilState: 0
+      stencilReference: 0
+      stencilCompareFunction: 8
+      passOperation: 0
+      failOperation: 0
+      zFailOperation: 0
+--- !u!114 &7292178901772222247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e44ee7914f29a94399c019a14ff02da, type: 3}
+  m_Name: Outline2Character
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  Settings:
+    PassTag: ExtendedRenderObjectsFeature
+    Event: 500
+    FilterSettings:
+      RenderQueueType: 0
+      LayerMask:
+        serializedVersion: 2
+        m_Bits: 8
+      PassNames: []
+      RenderingLayerMask: 256
+    OverrideMaterial: {fileID: 2100000, guid: ab0a2e81dd9537547bb6813c221ef990, type: 2}
+    OverrideMaterialPassIndex: 0
+    OverrideDepthState: 1
+    DepthCompareFunction: 7
+    EnableWrite: 1
+    StencilSettings:
+      overrideStencilState: 1
+      stencilReference: 7
+      stencilCompareFunction: 5
+      passOperation: 2
+      failOperation: 0
+      zFailOperation: 0
+--- !u!114 &7399090843486640496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b13ee56e0bae420bbdab168b03688a03, type: 3}
+  m_Name: TimeOfDayRenderFeature
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  _rotationX:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 360
+      outSlope: 360
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 360
+      inSlope: 360
+      outSlope: 360
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _rotationY:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 350
+      outSlope: 350
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.2
+      value: 70
+      inSlope: 87.49999
+      outSlope: 87.49999
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.59999996
+      value: 0
+      inSlope: -2.732506
+      outSlope: -2.732506
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.11070359
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _rotationZ:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _lightIntensity:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.05
+      value: 0
+      inSlope: 0.061001156
+      outSlope: 0.061001156
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.32917804
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.34986582
+      value: 1.2091728
+      inSlope: -0.052521706
+      outSlope: -0.052521706
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.64
+      value: 0.008765122
+      inSlope: -4.137423
+      outSlope: -4.137423
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _lightColor:
+    serializedVersion: 2
+    key0: {r: 0.8773585, g: 0.6600601, b: 0.6180135, a: 1}
+    key1: {r: 1, g: 0.91082066, b: 0.81761, a: 1}
+    key2: {r: 1, g: 0.95792156, b: 0.90560675, a: 0}
+    key3: {r: 1, g: 0.9916142, b: 0.9685534, a: 0}
+    key4: {r: 1, g: 0.7187414, b: 0, a: 0}
+    key5: {r: 0.9716981, g: 0.38180527, b: 0.02444516, a: 0}
+    key6: {r: 0.22690094, g: 0.09134984, b: 0.2703495, a: 0}
+    key7: {r: 0.07583561, g: 0.0073572802, b: 0.2924528, a: 0}
+    ctime0: 2506
+    ctime1: 5590
+    ctime2: 7063
+    ctime3: 31493
+    ctime4: 32823
+    ctime5: 34152
+    ctime6: 38723
+    ctime7: 65535
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 8
+    m_NumAlphaKeys: 2

@@ -1,0 +1,90 @@
+// This file contents should be placed at Assets/Plugins/Android/settingsTemplate.gradle
+// This works around Unity's 2019.3 bug where their root build.gradle is placing buildscript under allprojects
+// On it's own it doesn't create issues however doing so means including a buildscript block in any sub projects
+//   such as "unityLibrary" which is generated from the template Assets/Plugins/Android/mainTemplate.gradle does not work.
+// It results in a build error of "Configuration with name 'compileClasspath' not found." on a lint task.
+// Normally adding "lintOptions { abortOnError false }" bypasses any lint task errors however
+//   either due to a bug with the Android Gradle plugin or an order of operations this does seem to be applying in this case.
+// Until Unity fixes their root build.gradle we will need to keep using this file to enable any additional Gradle plugins.
+
+import org.gradle.util.GradleVersion
+
+gradle.rootProject {
+    it.afterEvaluate {
+        it.allprojects {
+            // Since Unity 2019.3 enabling Jetifier via mainTemplate.gradle is no longer working
+            // Enabling it for all gradle projects here.
+            it.ext['android.useAndroidX'] = true
+            it.ext['android.enableJetifier'] = true
+
+            it.ext.kotlin_version = '1.5.20'
+
+            it.buildscript {
+                dependencies {
+                    // use newer version of the plugin for newer unity/gradle versions
+                    // table from https://developer.android.com/studio/releases/gradle-plugin#updating-gradle
+                    if (GradleVersion.current() >= GradleVersion.version("7.4")) {
+                        classpath 'com.android.tools.build:gradle:7.3.1'
+                        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+                    } else if (GradleVersion.current() >= GradleVersion.version("7.3.3")) {
+                        classpath 'com.android.tools.build:gradle:7.2.2'
+                        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.10"
+                    } else if (GradleVersion.current() >= GradleVersion.version("7.2")) {
+                        classpath 'com.android.tools.build:gradle:7.1.3'
+                        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.10"
+                    } else if (GradleVersion.current() >= GradleVersion.version("7.0.2")) {
+                        classpath 'com.android.tools.build:gradle:7.0.4'
+                        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.10"
+                    } else if (GradleVersion.current() >= GradleVersion.version("6.7.1")) {
+                        classpath 'com.android.tools.build:gradle:4.2.0'
+                        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.32"
+                    } else if (GradleVersion.current() >= GradleVersion.version("6.5")) {
+                        classpath 'com.android.tools.build:gradle:4.1.0'
+                        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.32"
+                    } else if (GradleVersion.current() >= GradleVersion.version("6.1.1")) {
+                        classpath 'com.android.tools.build:gradle:4.0.0'
+                        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.32"
+                    } else if (GradleVersion.current() >= GradleVersion.version("5.6.4")) {
+                        classpath 'com.android.tools.build:gradle:3.6.4'
+                        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.32"
+                    } else if (GradleVersion.current() >= GradleVersion.version("5.4.1")) {
+                        classpath 'com.android.tools.build:gradle:3.5.4'
+                        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.32"
+                    } else if (GradleVersion.current() >= GradleVersion.version("5.1.1")) {
+                        classpath 'com.android.tools.build:gradle:3.4.3'
+                        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.32"
+                    } else if (GradleVersion.current() >= GradleVersion.version("4.10.1")) {
+                        classpath 'com.android.tools.build:gradle:3.3.3'
+                        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.32"
+                    } else if (GradleVersion.current() >= GradleVersion.version("4.6")) {
+                        classpath 'com.android.tools.build:gradle:3.2.1'
+                        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.32"
+                    } else if (GradleVersion.current() >= GradleVersion.version("4.4")) {
+                        classpath 'com.android.tools.build:gradle:3.1.0'
+                        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.32"
+                    } else if (GradleVersion.current() >= GradleVersion.version("4.1")) {
+                        classpath 'com.android.tools.build:gradle:3.0.1'
+                        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.32"
+                    } else if (GradleVersion.current() >= GradleVersion.version("3.3")) {
+                        classpath 'com.android.tools.build:gradle:2.3.3'
+                        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.32"
+                    } else {
+                        // Does not support 
+                    }
+
+                    classpath 'com.google.gms:google-services:4.3.14'
+
+                    classpath 'com.huawei.agconnect:agcp:1.7.3.300' // huawei
+                }
+            }
+        }
+    }
+}
+
+
+// Per Unity's docs /*/*INCLUDES/*/* should be at the bottom.
+// https://docs.unity3d.com/Manual/android-gradle-overview.html
+
+// However it seem to have left out this include line
+include ':launcher', ':unityLibrary'
+**INCLUDES**

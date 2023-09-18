@@ -1,0 +1,75 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.com2verse.uitoolkitextension/Editor/Resources/USS/Com2Verse.uss?fileID=7433441132597879392&amp;guid=e48caf10e7b202843bbccde4ffd7874a&amp;type=3#Com2Verse" />
+    <Style src="project://database/Packages/com.com2verse.bannedwords/Editor/BannedWords.uss?fileID=7433441132597879392&amp;guid=1d5b841a8cb244c4fa8734eb945ccedf&amp;type=3#BannedWords" />
+    <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="layout-root">
+        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="금칙어 확인" class="layout-title" />
+        <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="layout-box" style="min-height: 120px;">
+            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="설정" class="layout-title" />
+            <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx style="flex-direction: row;">
+                <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx style="flex-grow: 1;">
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="item-with-label">
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="App ID" class="label-layout" />
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.TextFieldEx binding-path="_appId" class="item-layout" style="flex-grow: 1; flex-basis: 80px;" />
+                    </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="item-with-label">
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="GameName" class="label-layout" />
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.TextFieldEx binding-path="_gameName" class="item-layout" style="flex-grow: 1; flex-basis: 80px;" />
+                    </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="item-with-label">
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="Revision" class="label-layout" />
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.TextFieldEx binding-path="_revision" class="item-layout" style="flex-grow: 1; flex-basis: 80px;" />
+                    </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="item-with-label">
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="Is Staging" class="label-layout" />
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.ToggleEx name="ToggleIsStaging" />
+                    </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+                </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+                <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx style="flex-grow: 1;">
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="item-with-label">
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="Lang" class="label-layout" />
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.TextFieldEx binding-path="_lang" class="item-layout" style="flex-grow: 1; flex-basis: 80px;" />
+                    </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="item-with-label">
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="Country" class="label-layout" />
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.TextFieldEx binding-path="_country" class="item-layout" style="flex-grow: 1; flex-basis: 80px;" />
+                    </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+                    <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="item-with-label">
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="Usage" class="label-layout" />
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx binding-path="_usage" style="flex-basis: 25px; flex-grow: 1;" />
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.ButtonEx text="All" name="BtnUsageAll" style="flex-basis: 16.6px; flex-grow: 1;" />
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.ButtonEx text="Name" name="BtnUsageName" style="flex-basis: 16.6px; flex-grow: 1;" />
+                        <Com2VerseEditor.UGC.UIToolkitExtension.Controls.ButtonEx text="Sentence" name="BtnUsageSentence" style="flex-basis: 16.6px; flex-grow: 1;" />
+                    </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+                </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+            </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.ButtonEx text="금칙어 로드" name="BtnLoad" />
+        </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+        <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="layout-box">
+            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="테스트" class="layout-title" />
+            <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="item-with-label">
+                <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="테스트 문자열" class="label-layout" />
+                <Com2VerseEditor.UGC.UIToolkitExtension.Controls.TextFieldEx binding-path="_inputBannedWord" class="item-layout" style="flex-grow: 1; flex-basis: 80px;" />
+            </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+            <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="item-with-label">
+                <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="변경할 문자열" class="label-layout" />
+                <Com2VerseEditor.UGC.UIToolkitExtension.Controls.TextFieldEx binding-path="_inputReplace" class="item-layout" style="flex-grow: 1; flex-basis: 80px;" />
+            </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+            <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="item-with-label">
+                <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="금칙어 적용 문자열" class="label-layout" />
+                <Com2VerseEditor.UGC.UIToolkitExtension.Controls.TextFieldEx binding-path="_inputBannedWordResult" readonly="true" class="item-layout" style="flex-grow: 1; flex-basis: 80px;" />
+            </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.ButtonEx name="BtnTest" text="금칙어 적용" />
+        </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+        <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="layout-box">
+            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="금칙어 검색" class="layout-title" />
+            <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="item-with-label">
+                <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="검색할 금칙어" class="label-layout" />
+                <Com2VerseEditor.UGC.UIToolkitExtension.Controls.TextFieldEx binding-path="_inputFind" name="InputFind" class="item-layout" style="flex-grow: 1; flex-basis: 80px;" />
+            </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+        </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+        <Com2VerseEditor.UGC.UIToolkitExtension.Containers.ScrollViewEx class="layout-box" style="flex-shrink: 30; flex-grow: 1;">
+            <Com2VerseEditor.UGC.UIToolkitExtension.Containers.ListViewEx name="ListBannedWords" />
+        </Com2VerseEditor.UGC.UIToolkitExtension.Containers.ScrollViewEx>
+        <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx name="Menu" class="layout-box" />
+    </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+</ui:UXML>

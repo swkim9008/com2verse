@@ -1,0 +1,39 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.com2verse.uitoolkitextension/Editor/Resources/USS/Com2Verse.uss?fileID=7433441132597879392&amp;guid=e48caf10e7b202843bbccde4ffd7874a&amp;type=3#Com2Verse" />
+    <Style src="project://database/Packages/com.com2verse.storageapi/Editor/StorageEditor.uss?fileID=7433441132597879392&amp;guid=f0ef892a05dd49c41b06375ab085a338&amp;type=3#StorageEditor" />
+    <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+        <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="layout-box">
+            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="인증 및 설정" class="label-title" />
+            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.TextFieldEx binding-path="_accessToken" label="인증 토큰" />
+            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.TextFieldEx binding-path="_serviceName" label="Service Name" />
+            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.TextFieldEx binding-path="_path" label="Path" />
+        </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+        <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="layout-box">
+            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="업로드" class="label-title" />
+            <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx style="flex-direction: row; justify-content: space-between; align-items: center;">
+                <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="File Name" />
+                <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx binding-path="_fileName" />
+            </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+            <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx style="flex-direction: row; justify-content: space-between; align-items: center;">
+                <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="Length" />
+                <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx binding-path="_length" />
+            </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+            <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx style="flex-direction: row; justify-content: space-between; align-items: center;">
+                <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="MD5" />
+                <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx binding-path="_md5" />
+                <Com2VerseEditor.UGC.UIToolkitExtension.Controls.ButtonEx name="btnCopyHash" text="복사" />
+            </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+            <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx style="margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px;">
+                <Com2VerseEditor.UGC.UIToolkitExtension.Controls.ButtonEx name="btnHashCheckFile" text="해시 확인" />
+                <Com2VerseEditor.UGC.UIToolkitExtension.Controls.ButtonEx text="업로드" name="btnSelectFile" style="flex-grow: 1;" />
+            </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+        </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+        <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx class="layout-box">
+            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.LabelEx text="다운로드" class="label-title" />
+            <Com2VerseEditor.UGC.UIToolkitExtension.Controls.TextFieldEx label="FileName" binding-path="_downloadFileName" />
+            <Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx style="margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px;">
+                <Com2VerseEditor.UGC.UIToolkitExtension.Controls.ButtonEx text="다운로드 URL 요청" name="btnDownloadUrl" />
+            </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+        </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+    </Com2VerseEditor.UGC.UIToolkitExtension.Containers.VisualElementEx>
+</ui:UXML>

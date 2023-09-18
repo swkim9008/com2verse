@@ -1,0 +1,1 @@
+mklink /D "./Local_TableData" "D:/TableData/Assets/Deploy"
